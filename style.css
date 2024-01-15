@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+:root{
+    --fonte-titulo: "alegreya";
+    --cor-titulo: #FFFFFF;
+    --cor-fundo: #0C061C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.abertura {
+    background-image: url("./assests/background.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.abertura__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 60px;
+    color: var(--cor-titulo);
+    font-weight: 400;
+    text-align: center;
+}
+.abertura__bloco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.secundario {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+}
+.secundario__titulo {
+    color: var(--cor-titulo);
+    font-size: 56px;
+    margin: 5rem 0 5rem 0;
+}
+.secundario__texto {
+    color: var(--cor-titulo);
+    font-size: 32px;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+.itens {
+    color: var(--cor-titulo);
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+.secundario__itens__texto {
+    margin-left: 4%;
+}
+.secundario__itens__imagem{
+    padding-left: 15%;
+    margin: 2% 0 2% 0;
+
+}
+.terciario {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.terciario__itens__ultimos {
+    display: flex;
+    align-items: center;
+
+}
+.terciario__itens__ultimos__imagem {
+    color: var(--cor-titulo);
+    flex-direction: column;
+    align-items: center;
+}
+.terciario__itens__ultimos__texto {
+    text-align: center;
+    color: var(--cor-titulo);
+    font-size: 32px;
+    margin-top: 20%;    
+
+
+}
+.rodape {
+    background-image: linear-gradient(#0C061C,#A129F2);
+    color: var(--cor-titulo);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.container {
+    margin-top: 6%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rodape__texto {
+    padding: 2rem;
+    font-size: 30px;
+    color: var(--cor-titulo);
+    position: relative;
+    bottom: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 1s;
+}
+.container:hover .rodape__texto {
+    bottom: 0;
+}
